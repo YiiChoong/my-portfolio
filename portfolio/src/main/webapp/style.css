@@ -257,3 +257,9 @@ section {
   margin-left: 200px;
   z-index: 100;
 }
+#experience p {
+  position: absolute;
+  z-index: 100;
+  transform: translate(90px, 100px);
+  font-size: 18px;
+}
