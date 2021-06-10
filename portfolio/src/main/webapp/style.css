@@ -257,20 +257,3 @@ section {
   margin-left: 200px;
   z-index: 100;
 }
-
-/* Make it Responsive */
-/* @media all and (min-width: 1024px) {
-  h1 {
-    font-size: 28px;  
-  }
-  h2 {
-    font-size: 24px;
-  }
-  p {
-    font-size: 18px;
-    line-height: 24px;
-  }
-  q {
-    font-size: 24px;
-  }
-}  */
