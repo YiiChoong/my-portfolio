@@ -15,14 +15,25 @@
 /**
  * Adds a random greeting to the page.
  */
-function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+document.querySelector("video").playbackRate=0.5;
 
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll(".nav-menu ul li");
 
-  // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
-}
+window.addEventListener("scroll", ()=>{
+    let current = "";
+    sections.forEach(section =>{
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if(pageYOffset >= sectionTop - sectionHeight / 2){
+            current = section.getAttribute("id");
+        }
+    })
+    
+    navLi.forEach(li =>{
+        li.classList.remove("active");
+        if(li.classList.contains(current)){
+            li.classList.add("active");
+        }
+    })
+})

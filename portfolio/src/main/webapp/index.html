@@ -1,19 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    </div>
+    <header id="header">
+      <nav class="nav-menu">
+        <ul>
+          <li class="home active">
+            <a href="index.html">
+              <i class="bx bx-home"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="about">
+            <a href="#about">
+              <i class="bx bx-user-circle"></i>
+              <span>About</span>
+            </a>
+          </li>
+          <li class="education">
+            <a href="#education">
+              <i class="bx bx-briefcase"></i>
+              <span>Education</span>
+            </a>
+          </li>
+          <li class="experience">
+            <a href="#experience">
+              <i class="bx bx-task"></i>
+              <span>Experience</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/yiichoong-kaw-21b33a175/"
+          class="linkedIn"
+          ><i class="bx bxl-linkedin-square"></i
+        ></a>
+        <a href="https://github.com/YiiChoong" class="github"
+          ><i class="bx bxl-github"></i
+        ></a>
+      </div>
+    </header>
+    <!-- ---------Home Page---------- -->
+    <section id="home">
+      <video autoplay muted loop id="homeVideo">
+        <source src="images/homeVideo.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="home-content" data-aos="fade-in" data-aos-duration="3000">
+        <p>Welcome to My Portfolio</p>
+        <h1>I am <br />Yii Choong Kaw</h1>
+      </div>
+      <div class="typeWritter">
+        <q>Changes only begin at the end of your comfort zone.</q>
+      </div>
+    </section>
+    <!-- ---------About Page---------- -->
+    <section id="about">
+      <div class="aboutbackground"></div>
+      <div class="about-content">
+        <h1>About Me</h1>
+        <p>
+          My name is Yii Choong Kaw and I am from Malaysia. I major in computer
+          science and currently study in California State University, Fresno.
+          I love to watch movies and tv shows in different genres.
+        </p>
+        <p>
+          I watched a lot of sci-fi movies growing up which is part of the reason
+          why I am very interested in technology. I want to know every what's 
+          behind every machine and how they work. Realistically, I cannot absorb
+          that much of information so I try my best to learn whatever I can.
+        </p>
+      </div>
+    </section>
+    <!-- ---------Education Page---------- -->
+    <section id="education">
+      <h1>Education</h1>
+      <div class="education-content">
+        <div class="schs" data-aos="fade-right" data-aos-duration="2000">
+          <img
+            src="/images/schs.jpg"
+            align="left"
+            style="width: 350px; height: 180px"
+          />
+          <div class="left-container">
+            <h2>Sabah Chinese High School (2013 - 2017)</h2>
+            <p>
+              This was my high school where I actively participated in events and
+              even organized events with my friends. I had a lot of fun during
+              my high school years and certainly try as well as learn a lot of
+              new things.
+            </p>
+          </div>
+        </div>
+        <div class="inti" data-aos="fade-left" data-aos-duration="2000">
+          <img
+            src="/images/inti.jpg"
+            align="right"
+            style="width: 350px; height: 180px"
+          />
+          <div class="right-container">
+            <h2>INTI College Subang (2018 - 2019)</h2>
+            <p>
+              This is where I first stepped out my comfort zone. I moved out of my
+              house and lived near the campus. I also met some new friends. It
+              was a stressful time for me as there were a lot of things I needed
+              to adapt to. During these two years, I joined a club and hosted two
+              large events.
+            </p>
+          </div>
+        </div>
+        <div class="fresno" data-aos="fade-right" data-aos-duration="2000">
+          <img
+            src="/images/fresno.png"
+            align="left"
+            style="width: 350px; height: 180px"
+          />
+          <div class="left-container">
+            <h2>California State University, Fresno (2020 - present)</h2>
+            <p>
+              This was the first time I traveled alone to the other side of the
+              world. I was very excited to start another chapter of my life.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---------Experience Page---------- -->
+    <section id="experience">
+      <h1>Comming Soon...</h1>
+    </section>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
