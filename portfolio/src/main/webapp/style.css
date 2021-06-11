@@ -257,3 +257,18 @@ section {
   margin-left: 200px;
   z-index: 100;
 }
+#experience p {
+  position: absolute;
+  z-index: 100;
+  transform: translate(90px, 100px);
+  font-size: 18px;
+}
+#experience button{
+  position: absolute;
+  z-index: 100;
+  transform: translate(100px, 100px);
+  font-size: 18px;
+  padding: 10px 12px;
+  text-align: center;
+  cursor: pointer;
+}
