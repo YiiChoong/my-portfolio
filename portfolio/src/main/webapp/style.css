@@ -280,3 +280,53 @@ section {
   font-family: "Fira Sans", serif;
   font-style: italic;
 }
+/* ------Contact page------ */
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+#contact h1 {
+  position: absolute;
+  transform: translate(90px, -300px);
+  font-size: 50px;
+}
+.container {
+  transform: translate(90px);
+  width: 500px;
+  border-radius: 20px;
+  background-color: #f2f2f25a;
+  padding: 20px;
+  box-shadow: 10px 10px #0000005b;
+}
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  resize: none;
+  overflow: auto;
+  opacity: 0.5;
+}
+.container-small {
+  margin-top: 5px;
+}
+.container-large {
+  margin-top: 5px;
+}
+#contact button {
+  float: right;
+  background-color: transparent;
+  color: #e7e7e7;
+  border-radius: 5px;
+  padding: 8px;
+  border: 2px solid #e7e7e75a;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+#contact button:hover {
+  background-color: #e7e7e75a;
+  cursor: pointer;
+}

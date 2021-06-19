@@ -2,7 +2,6 @@ package com.google.sps.servlets;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Random;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,7 +14,7 @@ import com.google.gson.Gson;
 @WebServlet("/hello")
 public class HelloWorldServlet extends HttpServlet {
 
-    @Override
+  @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
     ArrayList<String> list = new ArrayList<String>();
     list.add("I used to interested in art and I considered myself good at sketching, I supposed...");
